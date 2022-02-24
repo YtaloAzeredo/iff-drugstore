@@ -12,6 +12,34 @@ public class Drugstore implements Serializable {
     private String cnpj;
     private String cellphone;
 
+    private Address address;
+    private Products products;
+    private Orders orders;
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public Products getProducts() {
+        return products;
+    }
+
+    public void setProducts(Products products) {
+        this.products = products;
+    }
+
+    public Orders getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Orders orders) {
+        this.orders = orders;
+    }
+
     public String getCellphone() {
         return cellphone;
     }

@@ -1,13 +1,23 @@
 package com.drugstore.models;
 
 public class Client extends Person{
-    private String documents;
+    private String paymentMethod;
 
-    public String getDocuments() {
-        return documents;
+    private Orders orders;
+
+    public Orders getOrders() {
+        return orders;
     }
 
-    public void setDocuments(String documents) {
-        this.documents = documents;
+    public void setOrders(Orders orders) {
+        this.orders = orders;
+    }
+
+    public String getPaymentMethod() {
+        return paymentMethod;
+    }
+
+    public void setPaymentMethod(String paymentMethod) {
+        this.paymentMethod = paymentMethod;
     }
 }

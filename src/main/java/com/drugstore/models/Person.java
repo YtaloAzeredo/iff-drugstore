@@ -10,8 +10,22 @@ public abstract class Person implements Serializable {
     private Long id;
     private String nome;
     private Date birthdate;
-    private String address;
     private String cellphone;
+
+    private Address address;
+    private Documents documents;
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public Documents getDocuments() {
+        return documents;
+    }
+
+    public void setDocuments(Documents documents) {
+        this.documents = documents;
+    }
 
     public Long getId() {
         return id;
@@ -35,14 +49,6 @@ public abstract class Person implements Serializable {
 
     public void setBirthdate(Date birthdate) {
         this.birthdate = birthdate;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getCellphone() {

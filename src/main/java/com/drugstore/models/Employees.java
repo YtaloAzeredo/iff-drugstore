@@ -7,6 +7,16 @@ public class Employees extends Person{
     private Double salary;
     private Date admissionDate;
 
+    private Orders orders;
+
+    public Orders getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Orders orders) {
+        this.orders = orders;
+    }
+
     public String getOccupation() {
         return occupation;
     }
